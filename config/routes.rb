@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   # get "/your_first_screen" => "pages#first"
   
+  get("/", { :controller => "items", :action => "index"})
 end
