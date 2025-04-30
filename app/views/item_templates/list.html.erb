@@ -1,0 +1,30 @@
+<div class="main-container">
+  <div class="image-row">
+    <img src="app/assets/images/headshot.jpg" alt="Benny's headshot" class="banner-image">
+  </div>
+
+  <div class="name-row">
+    <h1>Benny Joram</h1>
+  </div>
+
+  <div class="social-icons-row">
+    <a href="https://github.com/borvux" target="_blank">Github</a>
+    <a href="https://www.linkedin.com/in/benny-joram/" target="_blank" style="margin-left: 45px;">LinkedIn</a>
+    <a href="https://www.codecademy.com/profiles/borvux" target="_blank"> Codecademy</a>
+  </div>
+
+  <div class="links-row">
+    <div class="links-row">
+      <% @list_of_items.each do |the_item| %>
+        <div class="item">
+          <img src="<%= the_item.thumbnail_url %>" class="thumbnail">
+
+          <a class="link-text" target="_blank" href="<%= the_item.link_url %>">
+            <%= the_item.link_description %>
+          </a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>

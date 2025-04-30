@@ -13,3 +13,91 @@
  *= require_tree .
  *= require_self
  */
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(180deg, #111, #222, #333, #444, #555);
+  color: rgba(220, 220, 220, 1.0);
+  font-family: "Raleway", sans-serif;
+}
+
+.banner-image {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #888;
+}
+
+.thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #666;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #03a9f4;
+}
+
+.item {
+  background-color: rgba(50, 50, 50, 0.9);
+  border-radius: 12px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.main-container {
+  max-width: 640px;
+  margin: auto;
+}
+
+.image-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.name-row {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.link-text {
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 45px;
+}
